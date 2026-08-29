@@ -12,9 +12,8 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Aluno> Alunos { get; set; }
-
     public DbSet<Professor> Professores { get; set; }
-
     public DbSet<Disciplina> Disciplinas { get; set; }
     public DbSet<RegistroAcademico> RegistrosAcademicos { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
 }
