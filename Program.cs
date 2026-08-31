@@ -26,6 +26,8 @@ builder.Services.AddScoped<IDisciplinaRepository, DisciplinaRepository>();
 builder.Services.AddScoped<IDisciplinaService, DisciplinaService>();
 builder.Services.AddScoped<IRegistroAcademicoRepository, RegistroAcademicoRepository>();
 builder.Services.AddScoped<IRegistroAcademicoService, RegistroAcademicoService>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddCors(options =>
 {
