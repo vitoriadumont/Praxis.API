@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Praxis.API.DTOs;
 using Praxis.API.Services;
@@ -5,6 +6,7 @@ using Praxis.API.Services;
 namespace Praxis.API.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
 public class AlunosController : ControllerBase
 {
